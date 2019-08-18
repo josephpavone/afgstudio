@@ -1,0 +1,219 @@
+
+/*******navbar**********/
+
+.navbar {	
+  width: 100%;
+  position: fixed;
+  height: auto;
+  margin: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+
+.bg-trans {
+  color: white;
+}
+
+
+.bg-trans p {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+
+.bg-trans {
+  transition: 650ms ease;
+  background: transparent !important;
+}
+
+  
+.bg-trans.scrolled {
+  background: white !important;
+  color: black;
+  ox-shadow: 0 0 0.4px 0;
+}
+
+.bg-trans.scrolled p {
+  color: black !important;
+}
+
+	
+
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  right: 0;  
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.4s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 80%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 100;
+  text-align: right;
+  color: white;
+  display: block; /* Display block instead of inline */
+  transition: 0.2s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: red;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 75px;
+  font-size: 35px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+/***********Header**************/
+
+#carouselExampleIndicators img {
+  height: 670px;
+  min-height: 600px;
+  object-fit: cover;
+}
+
+
+
+
+
+/*.jumbotron {
+  height: 700px;
+  padding: 0;
+  margin-bottom: 0;
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3)), ur('../images/wls_vista-3d-4def.jpg') no-repeat center / cover;
+	color: #ffff;
+  box-shadow: 0 0 5px 0;
+}
+
+.header-h1 {
+ padding-top: 390px;
+}
+
+.header-h1 h1{
+ font-size: 3.2em;
+ font-weight: 500;
+ text-shadow: black
+}
+
+
+/**About**/
+
+#about .container {
+	padding-top: 250px;
+	padding-bottom: 100px;
+}
+
+#about .row-about-1 .col-lg-6 {
+  padding-bottom: 50px;
+  line-height: 1.8rem;
+}
+
+
+
+
+/**Portfolio**/
+
+#portfolio .container {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  }
+
+#portfolio .row-project-title {
+  padding-bottom: 30px;
+}  
+  
+#portfolio .row-project {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}  
+
+#portfolio .row-project img{
+    width: 100%;
+    height: 350px;
+    display: block;
+    object-fit: cover;
+  }
+    
+
+  
+	/**Footer**/
+
+#footer {
+  background-color: #0A0908;
+}
+
+#footer .row {
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+  
+#footer .col-6 h5 {
+  margin-bottom: 0;
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+} 
+
+#footer .col-6 li {
+  margin-bottom: 0;
+  display: inline;
+  list-style-type: none;
+  color: white;
+  font-size: 18px;
+  float: right;
+  padding: 5px 5px 5px 5px;
+
+} 
+
+#footer .col-6 h6 {
+  margin-bottom: 0;
+  color: white;
+  font-size: 10px;
+  text-align: left;
+} 
+
+
+
