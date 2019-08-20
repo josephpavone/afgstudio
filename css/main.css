@@ -1,4 +1,26 @@
 
+/**font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Muli', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Heebo', sans-serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Yantramanav', sans-serif;
+font-family: 'Khula', sans-serif;
+font-family: 'Hind', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Cambay', sans-serif;**/
+
+body {
+  font-family: 'BlinkMacSystemFont';
+}
+
 /*******navbar**********/
 
 .navbar {	
@@ -39,7 +61,9 @@
   color: black !important;
 }
 
-	
+.menu:hover {
+  color: red;
+}
 
 
 /* The Overlay (background) */
@@ -79,7 +103,7 @@
 }
 
 /* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover {
   color: red;
 }
 
@@ -167,12 +191,16 @@
   padding-bottom: 30px;
 }  
 
-#portfolio .row-project img{
+#portfolio .row-project img {
     width: 100%;
     height: 350px;
     display: block;
     object-fit: cover;
   }
+
+#portfolio .row-project img:hover {
+  color: red;
+}
     
 
   
@@ -192,6 +220,7 @@ padding-top: 20px;
   margin-bottom: 0;
   color: white;
   font-size: 18px;
+  font-weight: 100; 
   text-align: left;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -203,16 +232,23 @@ padding-top: 20px;
   list-style-type: none;
   color: white;
   font-size: 18px;
+  font-weight: 100;
   float: right;
   padding: 5px 5px 5px 5px;
 
 } 
 
+#footer .col-6 li:hover {
+  color: red;
+  } 
+
 #footer .col-6 h6 {
   margin-bottom: 0;
   color: white;
   font-size: 10px;
+  font-weight: 100;
   text-align: left;
+
 } 
 
 
