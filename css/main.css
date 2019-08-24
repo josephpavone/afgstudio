@@ -30,6 +30,8 @@ body {
   margin: auto;
   padding-top: 0;
   padding-bottom: 0;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 
@@ -61,7 +63,7 @@ body {
   color: black !important;
 }
 
-.menu:hover {
+menu:hover {
   color: red;
 }
 
@@ -76,9 +78,9 @@ body {
   right: 0;  
   top: 0;
   background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0,0.8); /* Black w/opacity */
+  background-color: rgba(0,0,0,0.87); /* Black w/opacity */
   overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.4s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  transition: 0.3s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
@@ -86,8 +88,8 @@ body {
   position: relative;
   top: 25%; /* 25% from the top */
   width: 80%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  text-align: right; /* Centered text/links */
+  argin-top: 10px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 /* The navigation links inside the overlay */
@@ -102,6 +104,17 @@ body {
   transition: 0.2s; /* Transition effects on hover (color) */
 }
 
+.overlay .social {
+  padding-top: 50px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 100;
+  float: right;
+  color: white;
+  display: inline; /* Display block instead of inline */
+  transition: 0.2s; /* Transition effects on hover (color) */
+}
+
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover {
   color: red;
@@ -109,21 +122,24 @@ body {
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
-  position: absolute;
-  top: 0px;
-  right: 75px;
+  position: relative;
+  top: 15%;
+  width: 88%;
+  text-align: right; 
   font-size: 35px;
+  mrgin-top: 30px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px;
+  .overlay a {
+    font-size: 10px;
   }
 
   .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+    font-size: 5px;
+    top: 15%;
+    width: 90%;
   }
 }
 
@@ -134,6 +150,7 @@ body {
   height: 670px;
   min-height: 600px;
   object-fit: cover;
+  background-color: rgb(0,0,0), rgba(0,0,0,1)
 }
 
 
@@ -207,7 +224,7 @@ body {
 	/**Footer**/
 
 #footer {
-  background-color: #0A0908;
+  background-color: black;
 }
 
 #footer .row {
@@ -216,38 +233,59 @@ padding-top: 20px;
 }
 
   
-#footer .col-6 h5 {
+#footer .contatti h5 {
   margin-bottom: 0;
   color: white;
   font-size: 18px;
   font-weight: 100; 
-  text-align: left;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 } 
 
-#footer .col-6 li {
+#footer .contatti p {
   margin-bottom: 0;
-  display: inline;
-  list-style-type: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 100; 
+  padding-top: 0px;
+  padding-bottom: 1px;
+} 
+
+#footer .follow h5 {
+  margin-bottom: 0;
   color: white;
   font-size: 18px;
-  font-weight: 100;
-  float: right;
-  padding: 5px 5px 5px 5px;
-
+  font-weight: 100; 
+  
+  padding-top: 5px;
+  padding-bottom: 10px;
 } 
 
-#footer .col-6 li:hover {
-  color: red;
-  } 
+#footer .follow p {
+  margin-bottom: 0;
+  color: white;
+  font-size: 12px;
+  font-weight: 100;
+  padding-top: 0px;
+  padding-bottom: 1px;
+  
 
-#footer .col-6 h6 {
+}  
+
+#footer .copyright h6 {
   margin-bottom: 0;
   color: white;
   font-size: 10px;
   font-weight: 100;
   text-align: left;
+} 
+
+#footer .privacy h6 {
+  margin-bottom: 0;
+  color: black;
+  font-size: 10px;
+  font-weight: 100;
+  text-align: right;
 
 } 
 
