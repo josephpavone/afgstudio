@@ -28,7 +28,7 @@ body {
   position: fixed;
   height: auto;
   margin: auto;
-  padding: 5px;
+  padding: 0px;
 }
 
 
@@ -72,11 +72,11 @@ body {
 
 @media screen and (max-width: 540px) {
   .bg-trans h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .menu {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   .overlay .social {
@@ -113,7 +113,7 @@ body {
 .overlay a {
   padding: 5px;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 100;
   text-align: right;
   color: white;
@@ -151,7 +151,7 @@ body {
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-width: 540px) {
   .overlay a {
-    font-size: 40px;
+    font-size: 45px;
   }
 
   .overlay .closebtn {
@@ -181,7 +181,7 @@ body {
 
 @media screen and (max-width: 540px) {
   .display-4 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -211,33 +211,30 @@ body {
 /**About**/
 
 #about .container {
-	padding-top: 250px;
+	padding-top: 150px;
 	padding-bottom: 100px;
 }
 
-#about .row-about-1 .col-lg-6 {
-  padding-bottom: 50px;
-  line-height: 1.8rem;
-}
-
 #about h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 200;
   }
 
 #about p {
-  font-size: 1.3rem;
-  font-weight: 200;
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 
 @media screen and (max-width: 540px) {
   #about h3 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
   }
 
   #about p {
   font-size: 1rem;
-  font-weight: 100
+  font-weight: 200
   }
 }
 
@@ -247,7 +244,7 @@ body {
 /**Portfolio**/
 
 #portfolio .container {
-  padding-top: 200px;
+  padding-top: 100px;
   padding-bottom: 100px;
   }
 
@@ -303,20 +300,18 @@ padding-top: 20px;
   padding-bottom: 1px;
 } 
 
-#footer .follow h5 {
+#footer .copyright h5 {
   margin-bottom: 0;
-  color: white;
-  font-size: 18px;
-  font-weight: 200; 
-  
+  color: black;
+  font-size: 16px;
+  font-weight: 500; 
   padding-top: 5px;
-  padding-bottom: 10px;
 } 
 
 #footer .social p {
   margin-bottom: 0;
   color: black;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 200;
   padding-top: 0px;
   padding-bottom: 1px;
@@ -326,10 +321,18 @@ padding-top: 20px;
 
 }  
 
-#footer .copyright h6, p {
+#footer .copyright h6{
   margin-bottom: 0;
   color: black;
   font-size: 12px;
+  font-weight: 300;
+  text-align: left;
+} 
+
+#footer .copyright p {
+  margin-bottom: 0;
+  color: black;
+  font-size: 14px;
   font-weight: 300;
   text-align: left;
 } 
