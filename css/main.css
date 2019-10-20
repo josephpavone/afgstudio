@@ -19,6 +19,7 @@ font-family: 'Cambay', sans-serif;**/
 
 body {
   font-family: 'BlinkMacSystemFont';
+  ont-family: 'Arimo', sans-serif;
 }
 
 /*******navbar**********/
@@ -39,7 +40,7 @@ body {
 
 
 .bg-trans h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 0;
 }
 
@@ -53,7 +54,7 @@ body {
 .bg-trans.scrolled {
   background: white !important;
   color: black;
-  ox-shadow: 0 0 0.4px 0;
+  box-shadow: 0 0 0.4px 0;
 }
 
 .bg-trans.scrolled h1 {
@@ -62,7 +63,7 @@ body {
 
 .menu {
   font-weight: lighter;
-  font-size: 3rem;
+  font-size: 2.5rem;
 
 }
 
@@ -72,11 +73,11 @@ body {
 
 @media screen and (max-width: 540px) {
   .bg-trans h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .menu {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .overlay .social {
@@ -95,9 +96,9 @@ body {
   right: 0;  
   top: 0;
   background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0,0.82); /* Black w/opacity */
+  background-color: rgba(0,0,0,0.9); /* Black w/opacity */
   overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.3s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  transition: 0.4s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
@@ -210,31 +211,34 @@ body {
 
 /**About**/
 
+
 #about .container {
-	padding-top: 150px;
-	padding-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+#about .row-about-1 .col-lg-6 {
+  padding-bottom: 50px;
+  line-height: 1.8rem;
 }
 
 #about h3 {
-    font-size: 2.5rem;
-    font-weight: 200;
+    font-size: 4.5rem;
+    font-weight: 100;
   }
 
 #about p {
-  font-size: 1.2rem;
-  font-weight: 100;
+  font-size: 1.3rem;
+  font-weight: 200;
 }
 
 @media screen and (max-width: 540px) {
   #about h3 {
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: 0.05rem;
+    font-size:3.3rem;
   }
 
   #about p {
-  font-size: 1rem;
-  font-weight: 200
+  font-size: 1.3rem;
   }
 }
 
@@ -273,7 +277,9 @@ body {
 	/**Footer**/
 
 #footer {
-  background-color: white;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/opacity */
+  border-top: 0.1px solid lightgray;
 }
 
 #footer .row {
@@ -281,70 +287,62 @@ padding-bottom: 20px;
 padding-top: 20px;
 }
 
-  
 #footer .contatti h5 {
   margin-bottom: 0;
+  color: red;
+  font-size: 3rem;
+  font-weight: 200; 
+  padding-top: px;
+  padding-bottom: 3px;
+} 
+
+#footer .contatti h6 {
+  margin-bottom: 0;
   color: white;
-  font-size: 18px;
-  font-weight: 100; 
+  font-size: 1.8rem;
+  font-weight: 200; 
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
 } 
 
 #footer .contatti p {
   margin-bottom: 0;
   color: white;
-  font-size: 12px;
-  font-weight: 100; 
+  font-size: 0.8rem;
+  font-weight: 100;
   padding-top: 0px;
   padding-bottom: 1px;
-} 
-
-#footer .copyright h5 {
-  margin-bottom: 0;
-  color: black;
-  font-size: 16px;
-  font-weight: 500; 
-  padding-top: 5px;
-} 
-
-#footer .social p {
-  margin-bottom: 0;
-  color: black;
-  font-size: 18px;
-  font-weight: 200;
-  padding-top: 0px;
-  padding-bottom: 1px;
-  display: inline;
-  text-align: center;
-  
+  display: block;
+  text-align: left;
 
 }  
 
 #footer .copyright h6{
   margin-bottom: 0;
-  color: black;
-  font-size: 12px;
-  font-weight: 300;
+  color: white;
+  font-size: 10px;
+  font-weight: 200;
   text-align: left;
 } 
 
-#footer .copyright p {
-  margin-bottom: 0;
-  color: black;
-  font-size: 14px;
-  font-weight: 300;
-  text-align: left;
-} 
+media screen and (max-width: 540px) {
 
-#footer .credits h6 {
+.bg-trans h1 {
+  font-weight: 500;
   margin-bottom: 0;
-  color: black;
-  font-size: 12px;
-  font-weight: 300;
-  text-align: right;
+}
 
-} 
+  #about h3 {
+    font-size: 3.8rem;
+    ont-weight: 200;
+    etter-spacing: 0.05rem;
+  }
+
+  #about p {
+  font-size: 1.3rem;
+  font-weight: 100;
+  }
+}
 
 
 
