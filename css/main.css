@@ -74,10 +74,12 @@ body {
 @media screen and (max-width: 540px) {
   .bg-trans h1 {
     font-size: 1.3rem;
+    
   }
 
   .menu {
     font-size: 2rem;
+    font-weight: 200;
   }
 
   .overlay .social {
@@ -242,7 +244,7 @@ body {
 
   #about h3 {
     font-size:3.3rem;
-    font-weight: 200;
+    font-weight: 300;
   }
 
   #about p {
