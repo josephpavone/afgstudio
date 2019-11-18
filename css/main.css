@@ -256,14 +256,14 @@ body {
 
 #portfolio .container {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   }
 
 #portfolio .row-project-title {
   padding-bottom: 30px;
 }  
   
-#portfolio .row-project {
+portfolio .row-project {
   padding-top: 30px;
   padding-bottom: 30px;
 }  
